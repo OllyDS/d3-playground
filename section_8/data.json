@@ -1,0 +1,22 @@
+[
+    {
+        "name": "social",
+        "cost": 500
+    },
+    {
+        "name": "commuting",
+        "cost": 160
+    },
+    {
+        "name": "rent",
+        "cost": 1000
+    },
+    {
+        "name": "food",
+        "cost": 200
+    },
+    {
+        "name": "gym",
+        "cost": 100
+    }
+]
