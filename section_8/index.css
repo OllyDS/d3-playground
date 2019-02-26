@@ -1,0 +1,54 @@
+body {
+    background-color: indigo
+}
+
+.title-text-container {
+    text-align: center;
+    font-family: 'Roboto';
+    background-color: rebeccapurple
+}
+
+.title {
+    font-size: 4em;
+    color: white
+}
+
+.subtitle {
+    font-size: 2em;
+    color: lightgray;
+}
+
+.card {
+    background: gray;
+    max-width: 30vw;
+    margin-left: 10vw;
+    border-radius: 4px;
+    text-align: center
+}
+
+.btn-large {
+    color: aliceblue;
+    background-color: pink;
+    font-size: 40px;
+    border-radius: 4px;
+}
+
+.input-field {
+    /* display: block; */
+    font-size: 20px;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 2em;
+    color: white
+}
+
+label {
+    font-size: 1em;
+    color: white
+}
+
+input#name, input#cost {
+    font-size: 1em;
+}
