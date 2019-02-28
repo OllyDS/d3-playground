@@ -18,11 +18,15 @@ const arcPath = d3.arc()
     .outerRadius(dimensions.radius)
     .innerRadius(dimensions.radius / 2)
 
+// calls on d3 to supply an array of colors using 'ordinal scale'.
+const color = d3.scaleOrdinal(d3['schemeSet3'])
 
-// (1) grab the static data:
+// grab the static data:
 const angles = d3.json('data.json').then(data => {
 
-    // (2) assign the graph path elements to paths variable.
+    color.domain(data.map(el => el.name))
+
+    // assign the graph path elements to paths variable.
     const paths = graph.selectAll('path')
         .data(pie(data))
 
@@ -32,10 +36,9 @@ const angles = d3.json('data.json').then(data => {
         .attr('d', arcPath)
         .attr('stroke', '#fff')
         .attr('stroke-width', 3)
+        .attr('fill', el => color(el.data.name))
 
 })
-
-
 
 
 
